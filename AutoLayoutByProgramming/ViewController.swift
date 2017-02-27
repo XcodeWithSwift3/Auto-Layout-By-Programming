@@ -43,6 +43,7 @@ class ViewController: UIViewController {
         self.view.addSubview(yellowView)
         self.view.addSubview(greenView)
     }
+    //phát hiện màn hình xoay
     override func didRotate(from fromInterfaceOrientation: UIInterfaceOrientation) {
         redView.backgroundColor = UIColor.red
         redView.frame=CGRect(x: 10, y: 20, width: (self.view.bounds.size.width - 30)/2, height: ((self.view.bounds.size.height - 50)/2))
